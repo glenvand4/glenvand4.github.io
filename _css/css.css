@@ -1,4 +1,52 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    background-size: 1920px 1080px;
+}
 
-h1  {color: rgb(110,0,178);
+/*Navigatiebalk opmaak*/
+.topnav {
+    background-color: #222;
+    overflow: hidden;
+    width: 100%;
+    align: center;
+    opacity: 0.9;
+}
 
+/* Opmaak van de links */
+.topnav a {
+    float: left;
+    display: block;
+    color: #D8FF07;
+    text-align: center;
+    padding: 18px 14px;
+    text-decoration: none;
+    font-size: 24px;
+    font-family: "Dosis", sans-serif;
+}
+
+/* Hover opmaak */
+.topnav a:hover {
+    background-color: #9dd;
+    color: #00003B;
+    transition-duration: 0.4s;
+}
+
+/* Actieve link opmaak */
+.topnav a.active {
+    background-color: #97B202;
+    color: black;
+}
+
+
+body{
+    
+}
+
+
+h1  {
+    color: #000;
+    font-family: "Dosis";
+    text-align: center;
+    font-size: 32pt;
 }

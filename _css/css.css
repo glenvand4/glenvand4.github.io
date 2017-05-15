@@ -9,7 +9,6 @@ body, html {
     background-color: #222;
     overflow: hidden;
     width: 100%;
-    align: center;
     opacity: 0.9;
 }
 
@@ -36,11 +35,6 @@ body, html {
 .topnav a.active {
     background-color: #97B202;
     color: black;
-}
-
-
-body{
-    
 }
 
 

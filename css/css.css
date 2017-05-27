@@ -84,7 +84,7 @@ html, body{
 }
 
 .navspacer{
-    padding: 50px;
+    padding: 40px;
 }
 
 .content{
@@ -110,15 +110,16 @@ html, body{
     
 }
 
-.content h1{
-    font-family: 'Source Code Pro', monospace;
+h1{
+    font-family: 'Lobster', cursive;
     background-image: url("assets\PIC4.jpg");
-    font-size: 32pt;
+    font-size: 40pt;
 }
 
 h2{
     font-family: 'Source Code Pro', monospace;
-    font-size: 24pt;
+    font-size: 20pt;
+    padding-bottom: 10px;
 }
 
 .titelportfolio{
@@ -271,4 +272,75 @@ h4{
     color: black;
     font-family: 'Source Code Pro', monospace;
     font-size: 24pt;
+}
+
+/* Bordered form */
+form {
+    display:inline-block;
+    padding-top: 100px;
+}
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+    width: 200px;
+    padding: 14px 28px;
+    margin: 8px 0;
+    float:center;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color: #F1FAFF;
+    border: 2px solid #222;
+    padding: 14px 20px;
+    margin: 8px 0;
+    cursor: pointer;
+    width: 150px;
+    font-family: 'Source Code Pro', monospace;
+
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+    background-color: #506285;
+    color: #F1FAFF;
+    transition-duration: 0.3s;
+}
+
+/* Extra style for the cancel button (red) */
+.cancelbtn {
+    width: 150px;
+    padding: 10px 18px;
+    background-color: #F1FAFF;
+}
+
+/* Add padding to containers */
+.container {
+    width: 70%;
+    display:inline-block;
+}
+
+/* The "Forgot password" text */
+span.psw {
+    
+    padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+    .cancelbtn {
+        width: 150px%;
+    }
+}
+
+label{
+    font-family: 'Source Code Pro', monospace;
+
+    font-size: 18pt;
 }

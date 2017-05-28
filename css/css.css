@@ -98,8 +98,6 @@ html, body{
    -ms-transition: all 1s ease-out;
 }
 
-
-
 b{
     font-family: 'Metamorphous', cursive;
     font-size: 14pt;
@@ -311,6 +309,7 @@ button:hover {
 span.psw {
     float: right;
     padding-top: 16px;
+    padding: 10px;
 }
 
 .modal {
@@ -388,7 +387,6 @@ span{
 
 .social{
     font-family: 'Source Code Pro', monospace;
-    padding: 10px;
     text-decoration:none;
     color:#506285;
     font-size: 18pt;

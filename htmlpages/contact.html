@@ -27,27 +27,47 @@
             <li><a href="social.html">Social media</a></li>
     </nav>
     </div>
+<div class="navspacer">
+</div>
 
-    <form action="/action_page.php">
+<div class="contentform">
+    <h2>Contactgegevens</h2>
+    <ul>
+        <li><b>Naam:</b></li>Glenn Van de Brempt
+        <li><b>Adres:</b></li>rammelstraat 88, 9340 Lede
+        <li><b>E-mail:</b></li>vdb.glenn@hotmail.com
+        <li><b>GSM:</b></li>0468312700
+    </ul>
+</div>
+
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+<div id="id01" class="modal">
   
+  <form class="modal-content animate" action="/action_page.php">
+    <div class="imgcontainer">
+     <h2>Login Formulier</h2> 
+    </div>
 
-  <div class="container">
-    <label><b>Gebruikersnaam</b></label>
-    <input type="text" placeholder="Enter Username" name="uname" required>
+    <div class="container">
+      <label><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
 
-    <label><b>Wachtwoord</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required>
+      <label><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+      <input type="checkbox" checked="checked"><span>Remember me</span><span class="psw"><a href="#">Forgot password?</a></span>
+      
+    </div>
 
-    <button type="submit">Login</button>
-    <input type="checkbox" checked="checked"><span> Remember me </span>
-  </div>
-
-  <div class="container">
-    <button type="button" class="cancelbtn">Annuleren</button>
-    <span class="psw"><a href="#">Forgot password?</a></span>
-  </div>
-</form>
-
+    <div class="container" style="background-color:#F1FAFF">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      
+    </div>
+    
+  </form>
+</div>
     
 </body>
 </html>

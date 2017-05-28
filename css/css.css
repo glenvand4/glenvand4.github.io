@@ -8,8 +8,9 @@
         background: transparent;
         text-align: center;
     }
-
+/*alternatieve achtergrond= background-image: url("../assets/BG2.jpg");*/
 html, body{
+    background-color: #F3FAFF;
     background-image: url("../assets/BG2.jpg");
     background-attachment: fixed;
     background-repeat:no-repeat;
@@ -66,17 +67,11 @@ html, body{
 }
 
 .nav a:hover {
-    background-color: #ddd;
+    background-color: #F3FAFF;
     color: black;
     transition-duration: 0.4s;
     border-radius: 5px;
-    transform: scale(1.15, 1.15);
-    
-}
-
-.nav a.active {
-    background-color: #ddd;
-    color: black;
+    transform: scale(1.15, 1.15);    
 }
 
 .nav a:hover::after {
@@ -88,8 +83,24 @@ html, body{
 }
 
 .content{
-    background-color: #F1FAFF;
-    min-height: 70vh;
+    background-color: #F3FAFF;
+    min-height: fit-content;
+    max-height: 90vh;
+    width: 70%;
+    margin: auto;
+    opacity: 0.7;
+    overflow: auto;
+    padding-bottom: 20px;
+    border: 3px solid #506285;
+    -webkit-transition: all 1s ease-out;
+   -moz-transition: all 1s ease-out;
+   -o-transition: all 1s ease-out;
+   -ms-transition: all 1s ease-out;
+}
+
+.contentform{
+    background-color: #F3FAFF;
+    min-height: 25vh;
     max-height: 100vh;
     width: 70%;
     margin: auto;
@@ -103,22 +114,31 @@ html, body{
    -ms-transition: all 1s ease-out;
 }
 
-.content:hover{
+b{
+    font-family: 'Metamorphous', cursive;
+    font-size: 14pt;
+}
+
+.contentform:hover{
     opacity: 0.9;
     transition-duration: 0.4s;
     transition: all 1s ease-out;
-    
+}
+
+.content:hover{
+    opacity: 0.9;
+    transition-duration: 0.4s;
+    transition: all 1s ease-out;    
 }
 
 h1{
-    font-family: 'Lobster', cursive;
-    background-image: url("assets\PIC4.jpg");
+    font-family: 'lobster', cursive;
     font-size: 40pt;
 }
 
 h2{
     font-family: 'Source Code Pro', monospace;
-    font-size: 20pt;
+    font-size: 24pt;
     padding-bottom: 10px;
 }
 
@@ -132,14 +152,14 @@ h2{
   width: 70%;
   margin: 0 auto;
   padding: 5px;
-  background: #F1FAFF;
+  background: #F3FAFF;
   box-shadow: 0 1px 2px rgba(0,0,0,.3);
   border: 3px solid #506285;
   opacity:0.9;
-  -webkit-transition: all 0.5s ease-out;
-   -moz-transition: all 0.5s ease-out;
-   -o-transition: all 0.5s ease-out;
-   -ms-transition: all 0.5s ease-out;
+  -webkit-transition: all 1s ease-out;
+   -moz-transition: all 1s ease-out;
+   -o-transition: all 1s ease-out;
+   -ms-transition: all 1s ease-out;
 }
 
 .gallery > div {
@@ -168,8 +188,7 @@ h2{
 .gallery:hover{
     opacity: 1;
     transition-duration: 0.4s;
-    transition: all 1s ease-out;
-    
+    transition: all 1s ease-out;    
 }
 
 .cf:before, .cf:after {
@@ -182,20 +201,12 @@ h2{
   clear: both;
 }
 
-/* Always set the map height explicitly to define the size of the div
-       * element that contains the map. */
-      #map {
-        height: 100%;
-      }
-      /* Optional: Makes the sample page fill the window. */
-      html, body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
+#map{
+    height: 100%;
       }
 
-      .list li {
-  background: url("https://bradfrost.github.com/this-is-responsive/patterns/images/icon_arrow_right.png") no-repeat 97% 50%;
+.list li {
+  background: url("") no-repeat 97% 50%;
   border-bottom: 1px solid #ccc;
   display: table;
   border-collapse: collapse;
@@ -204,8 +215,9 @@ h2{
 
 .pattern{
     display: inline-block;
-    background-color: #F1FAFF;
+    background-color: #F3FAFF;
     width: fit-content;
+    min-width:500px;
     max-width: 70%;
     border: 3px solid #506285;
     opacity: 0.8;
@@ -221,6 +233,13 @@ h2{
     transition-duration: 0.4s;
     transition: all 0.5s ease-out;
     
+}
+
+.pattern li{
+    min-width: 500px;
+    max-width: 70%;
+    max-height:70%;
+    display:inline-block;
 }
 
 .inner {
@@ -248,103 +267,143 @@ h2{
 }
 
 .li-head {
-  margin: 0;
+    margin: 0;
+    font-family: 'Metamorphous', cursive;
+    font-size: 22pt;
 }
 
 .li-sub {
-  margin: 0;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    font-size: 18pt;
 }
 
-@media all and (min-width: 60em) {
-  .list li {
-    display: inline-block;
-    width: 70%;
-  }
-}
-
-@media all and (min-width: 75em) {
-  .list li {
-    width: 50%;
-  }
-}
-
-h4{
-    color: black;
-    font-family: 'Source Code Pro', monospace;
-    font-size: 24pt;
-}
-
-/* Bordered form */
-form {
-    display:inline-block;
-    padding-top: 100px;
-}
-
-/* Full-width inputs */
 input[type=text], input[type=password] {
-    width: 200px;
-    padding: 14px 28px;
+    width: 100%;
+    padding: 12px 20px;
     margin: 8px 0;
-    float:center;
+    display: inline-block;
     border: 1px solid #ccc;
     box-sizing: border-box;
 }
 
 /* Set a style for all buttons */
 button {
-    background-color: #F1FAFF;
-    border: 2px solid #222;
-    padding: 14px 20px;
-    margin: 8px 0;
-    cursor: pointer;
-    width: 150px;
-    font-family: 'Source Code Pro', monospace;
-
-}
-
-/* Add a hover effect for buttons */
-button:hover {
     background-color: #506285;
-    color: #F1FAFF;
-    transition-duration: 0.3s;
+    color: white;
+    padding: 14px 20px;
+    border: 3px solid black;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    font-family: 'Source Code Pro', monospace;
 }
 
-/* Extra style for the cancel button (red) */
+button:hover {
+    opacity: 0.8;
+    transition-duration: 0.4s;
+}
+
 .cancelbtn {
-    width: 150px;
+    width: 100%;
     padding: 10px 18px;
-    background-color: #F1FAFF;
+    background-color: #506285;
+    color: white;
+    font-family: 'Source Code Pro', monospace;
 }
 
-/* Add padding to containers */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
 .container {
-    width: 70%;
-    display:inline-block;
+    padding: 16px;
 }
 
-/* The "Forgot password" text */
 span.psw {
-    
+    float: right;
     padding-top: 16px;
 }
 
-/* Change styles for span and cancel button on extra small screens */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #F3FAFF;
+    margin: 5% auto 15% auto;
+    border: 2px solid #888;
+    width: 80%;
+}
+
+.close:hover,
+.close:focus {
+    cursor: pointer;
+}
+
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
 @media screen and (max-width: 300px) {
     span.psw {
-        display: block;
-        float: none;
+       display: block;
+       float: none;
     }
     .cancelbtn {
-        width: 150px;
+       width: 100%;
     }
 }
 
 label{
     font-family: 'Source Code Pro', monospace;
-
     font-size: 18pt;
 }
 
 span{
+    font-family: 'Source Code Pro', monospace;
+    width:100%;
+}
 
+.info{
+    text-decoration:none;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 22pt;
+    color:#506285;
+}
+
+.info:hover{
+    color:black;
+    transition-duration: 0.4s;
+}
+
+.social{
+    font-family: 'Source Code Pro', monospace;
+    padding: 10px;
+    text-decoration:none;
+    color:#506285;
+    font-size: 18pt;
 }
